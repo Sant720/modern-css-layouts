@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Grail Layout</title>
+    
+    <style>
+        .flex-wrapper {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .container {
+            width: 50%;
+            margin: auto;
+        }
+
+        .parent {
+            display: grid;
+            grid-template: auto 1fr auto / auto 1fr auto;
+            border-radius: 6px;
+            resize: both;
+            overflow: auto;
+        }
+
+        .header {
+            grid-column: 1 / 4;
+
+            text-align: center;
+            background-color: goldenrod;
+        }
+
+        .left-sidebar {
+            grid-column: 1 / 2;
+            padding: 10px 20px 10px;
+            background-color:lightcoral;
+        }
+
+        .main {
+            grid-column: 2 / 3;
+            padding: 10px 20px 10px;
+            background-color: lightblue;
+        }
+
+        .right-sidebar {
+            grid-column: 3 / 4;
+            padding: 10px 20px 10px;
+            background-color: lemonchiffon;
+        }
+
+        .footer {
+            grid-column: 1 / 4;
+            padding: 10px 20px 10px;
+
+            text-align: center;
+            background-color: darkgray;
+        }
+
+        h1{
+            font-family: sans-serif;
+            font-size: 2.2rem;
+        }
+
+        p {
+            font-family: sans-serif;
+            font-size: 1.4rem;
+        }
+
+        @media (max-width: 1200px) {
+            .container {
+                width: 95%
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-wrapper">
+        <div class="container">
+            <div class="parent">
+                <div class="header">
+                    <h1>Holly Grail Layout😇!</h1>
+                </div>
+                <div class="left-sidebar" contenteditable="">
+                    <p>Left sidebar</p>
+                </div>
+                <div class="main" contenteditable="">
+                    <p>The Holy Grail uses the CSS property <strong>grid-template: auto 1fr auto / auto 1fr auto</strong> to achieve the same thing as The Pancake Stack with multiple rows and columns.</p> 
+                    <p>Try resizing or adding more text!</p>
+                </div>
+                <div class="right-sidebar" contenteditable="">
+                    <p>Right Sidebar</p>
+                </div>
+                <div class="footer">
+                    <p>Footer &copy; Footer Inc. 2021</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
