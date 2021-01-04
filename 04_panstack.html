@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pancake Stack</title>
+    <style>
+        .flex-wrapper {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            justify-content: center;            
+        }
+
+        .parent {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            resize: both;
+            overflow: auto;
+        }
+        
+        body {            
+            height: 100vh;
+            width: 50%;
+            margin: auto;
+            font-family: system-ui, sans-serif;
+            overflow: auto;
+        }
+
+        header {
+            background: peru;
+            padding: 2rem;
+        }
+
+        h1 {
+            margin: 0;
+            /* line-height: 0; */
+            color: snow;
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        main {
+            padding: 1rem 2rem 1rem;
+            background: whitesmoke;
+            font-size: 1.4rem;
+        }
+
+        footer {
+            background: rosybrown;
+            padding: 1rem 2rem 1rem;
+            font-size: 1.2rem;
+            text-align: center;
+            color: snow;
+        }
+
+        @media (max-width: 1000px) {
+            body {
+                width: 90%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flex-wrapper">
+        <div class="parent">
+            <header>
+                <h1>The Pancake Stack 🥞</h1>
+            </header>
+            <main contenteditable="">
+                <p>Reliability is a cool thing. This box uses the CSS property <strong>grid-template-rows: auto 1fr auto</strong> to prevent the Header and Footer sections from adding any extra blank space when resizing. <br><br>Try resizing at the bottom right corner or adding more content here!</p>
+            </main>
+            <footer>
+                Footer &copy; Footer Inc. 2021
+            </footer>
+        </div>        
+    </div>
+
+</body>
+</html>
