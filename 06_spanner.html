@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanner</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            font-size: 5vh;
+            font-family: sans-serif;
+        }
+
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+        }
+
+        .span1 {
+            display: grid;
+            grid-column: 1 / 13;
+            place-items: center;
+            
+            background-color: darkseagreen;
+            min-height: 25vh;
+        }
+
+        .span2 {
+            display: grid;
+            grid-column: 3 / 9;
+            place-items: center;
+            
+            background-color: darksalmon;
+            min-height: 25vh;
+        }
+
+        .span3 {
+            display: grid;
+            grid-column: 4 / 12;
+            place-items: center;
+            
+            background-color: lightskyblue;
+            min-height: 25vh;
+        }
+
+        .span4 {
+            display: grid;
+            grid-column: 2 / 13;
+            place-items: center;
+            
+            background-color: goldenrod;
+            min-height: 25vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="span1">
+            <p>Span 1</p>
+        </div>
+        <div class="span2">
+            <p>Span 2</p>
+        </div>
+        <div class="span3">
+            <p>Span 3</p>
+        </div>
+        <div class="span4">
+            <p>Span 4</p>
+        </div>
+    </div>    
+</body>
+</html>
