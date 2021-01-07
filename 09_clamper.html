@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clamper</title>
+    <style>
+        .parent {
+            min-height: 50vh;
+            display: grid;
+            place-items: center;
+            resize: both;
+        }
+
+        .container {
+            width: clamp(23ch, 50%, 46ch);
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            justify-content: space-between;
+            background-color: thistle;
+            resize: both;
+
+        }
+
+        .visual {
+            height: 125px;
+            width: 100%;
+            background-color: navajowhite;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="container">
+            <div class="card">
+                <h1>Clampmaster</h1>
+                <div class="visual"></div>
+                <h3>width: clamp(23ch, 50%, 46ch)</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti harum dolore quidem animi iste nisi error, reprehenderit autem neque accusamus sint commodi. Incidunt, odit! Quasi natus dolor iusto veritatis provident!</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
