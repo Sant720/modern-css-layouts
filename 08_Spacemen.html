@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spacemen</title>
+    <style>
+        .flex-wrapper {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .container {
+            width: 80%;
+            display: grid;
+            place-items: center;
+            margin: auto;
+        }
+
+        .parent {
+            height: auto;
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            justify-content: space-between;
+            background-color: lemonchiffon;
+            border: 1px solid goldenrod;
+            border-radius: 10px;
+        }
+ 
+        .card {
+            height: 100px;
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-wrapper">
+        <div class="container">
+            <div class="parent">
+                <div class="box">
+                    <h1>Box 1</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div class="card"></div>
+                </div>
+                <div class="box">
+                    <h1>Box 2</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt aut totam assumenda voluptatibus quisquam nemo ipsam, natus doloribus perferendis.</p>
+                    <div class="card"></div>
+                </div>
+                <div class="box">
+                    <h1>Box 3</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, est error facilis quis adipisci, suscipit cum earum aliquam fugiat corporis maxime provident vero ipsum. Cum error ad amet corporis neque.</p>
+                    <div class="card"></div>
+                </div>
+            </div>
+        </div>       
+    </div>
+</body>
+</html>
