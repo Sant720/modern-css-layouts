@@ -1,0 +1,18 @@
+body {
+    display: flex;
+    min-height: 50vh;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: sans-serif;
+}
+
+.container { 
+    display: grid;
+    place-items: center;
+    margin: auto;
+}
+
+nav > a {
+    text-decoration: none;
+    font-size: large;
+}
