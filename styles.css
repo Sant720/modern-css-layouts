@@ -12,7 +12,20 @@ body {
     margin: auto;
 }
 
+.nav-home {
+    max-width: 50vw;
+    text-align: center;
+    line-height: 40px;
+}
+
 nav > a {
     text-decoration: none;
-    font-size: large;
+    font-size: x-large;
+    color: #333;
+    margin: 10px;
 }
+
+nav > a:hover {
+    color: #010101;
+}
+
