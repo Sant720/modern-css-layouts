@@ -1,31 +1,52 @@
 body {
     display: flex;
-    min-height: 50vh;
     flex-direction: column;
-    justify-content: space-between;
     font-family: sans-serif;
+    padding-top: 50px;
+}
+
+h1 {
+    font-size: xx-large;
+    font-weight: 750;
 }
 
 .container { 
     display: grid;
     place-items: center;
-    margin: auto;
 }
 
 .nav-home {
-    max-width: 50vw;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 200px));
+    max-width: 90vw;
     text-align: center;
-    line-height: 40px;
+    line-height: 60px;
+    user-select: none;
 }
 
-nav > a {
+@media (min-width: 850px) {
+    .nav-home {
+        max-width: 50vw;
+    }
+}
+
+.box {
+    display: grid;
+    grid-column: 1fr;
+    border: 2px solid #f0f0f0;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+}
+
+a {
     text-decoration: none;
     font-size: x-large;
     color: #333;
-    margin: 10px;
+    margin: 10px;    
 }
 
-nav > a:hover {
+a:hover {
     color: #010101;
 }
 
